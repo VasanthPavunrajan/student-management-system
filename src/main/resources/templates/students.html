@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="/css/style1.css">
+<meta charset="ISO-8859-1">
+<title>Student Management System</title>
+
+</head>
+<body>
+	<nav class="navbar">
+		<h3>
+			Student Management System
+			</h2>
+	</nav>
+
+	<div class="container">
+
+		<div class="row">
+			<button>
+				<a th:href="@{/students/new}"> Add Student</a>
+			</button>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Student First Name</th>
+					<th>Student Last Name</th>
+					<th>Student Email</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr th:each="student: ${students}">
+					<td th:text="${student.firstName}"></td>
+					<td th:text="${student.lastName}"></td>
+					<td th:text="${student.email}"></td>
+					<td>
+						<div class="btn">
+							<button>
+								<a th:href="@{/students/edit/{id}(id=${student.id})}">Update</a>
+							</button>
+							<button>
+								<a th:href="@{/students/{id}(id=${student.id})}">Delete</a>
+							</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+
+		</table>
+
+	</div>
+</body>
+</html>
