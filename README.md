@@ -40,7 +40,14 @@ A dynamic Student Management System implemented with CRUD (Create, Read, Update,
 4. **Access the Student Management System:**
    - Open your web browser and navigate to `http://localhost:8080`.
 
-![updating details](https://github.com/VasanthPavunrajan/student-management-system/assets/138379751/ee103d71-834a-42f0-b746-19c62d70f28c)
+## Screenshots
+![homepage](https://github.com/VasanthPavunrajan/student-management-system/assets/138379751/3c47f20b-0d17-4dfa-a1a3-c325e3d9ef1d)
+![create student](https://github.com/VasanthPavunrajan/student-management-system/assets/138379751/d9f48fd4-7a10-4ce9-ac65-dbe517391d3d)
+![updating details](https://github.com/VasanthPavunrajan/student-management-system/assets/138379751/c9f593ae-8c43-4f4c-918f-2e46d5d7567c)
+
+
+
+
 
 
 
